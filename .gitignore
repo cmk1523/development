@@ -44,4 +44,10 @@ Temporary Items
 #######
 /build
 /target
+target/
+*/target/*
+*/target/**
 ._*
+.classpath
+.project
+.settings/
