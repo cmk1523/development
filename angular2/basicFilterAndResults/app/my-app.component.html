@@ -1,0 +1,48 @@
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-6" style="margin-top: 8px">
+              <span>My App</span>
+            </div>
+            <div class="col-md-5 col-xs-4" style="margin-top: 8px">
+              <span class="pull-right">
+                <span data-toggle="dropdown">
+                  Username
+                  <span class="caret"></span>
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Dropdown link</a></li>
+                  <li><a href="#">Dropdown link</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class="col-md-1 col-xs-2">
+              <div class="time-display pull-right">
+                <div class="x-small">LOCAL</div>
+                <div>{{localTime | date:'HH:mm:ss'}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-3">
+          <filters></filters>
+        </div>
+        <div class="col-md-9">
+          <results></results>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="text-align: center">
+      My App v0.1 | Powered by <a href="http://angular.io">Google Angular2</a> and <a href="http://getbootstrap.com">Twitter Bootstrap</a>
+    </div>
+  </div>
+</div>

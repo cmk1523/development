@@ -1,0 +1,64 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span class="panel-title">
+      <div class="row">
+        <div class="col-xs-6" style="margin-top: 2px;">
+          <span>
+            <span class="glyphicon glyphicon-th-list"></span>
+            Results
+          </span>
+        </div>
+        <div class="col-xs-6">
+          <span class="pull-right">
+            <div class="btn-group btn-group-xs" role="group">
+              <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-share-alt"></span>
+              </button>
+              <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-option-vertical"></span>
+              </button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div class="panel-body results-body"> 
+    <div [ngSwitch]="items.length">
+      <div *ngSwitchWhen="0">
+        No results
+        <hr>
+      </div>
+      
+      <div *ngSwitchDefault>
+        <div class="row small result-row result-header">
+          <div class="col-xs-6">
+            <span class="pull-left">
+              Showing 0 - {{items.length < pageLength ? items.length : pageLength}} of {{items.length}}
+            </span>
+          </div>
+          <div class="col-xs-6">
+            <span class="pull-right">{{items.length}} total items</span>
+          </div>
+        </div>
+        
+        <div class="row result-row" *ngFor="#item of items; #idx = index">
+          <div class="col-xs-12 result-item" [ngClass]="{'first-result-item': idx == 0}">
+            <result-item [data]="item"></result-item>
+          </div>
+        </div>
+        
+        <div class="row small result-row result-header">
+          <div class="col-xs-6">
+            <span class="pull-left">
+              Showing 0 - {{items.length < pageLength ? items.length : pageLength}} of {{items.length}}
+            </span>
+          </div>
+          <div class="col-xs-6">
+            <span class="pull-right">{{items.length}} total items</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

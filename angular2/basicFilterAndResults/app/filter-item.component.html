@@ -1,0 +1,22 @@
+<div class="panel panel-default filter-row">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-xs-8">
+        <span class="glyphicon {{data.bootstrapIconClass}}"></span>
+        {{data.name}}
+      </div>
+      <div class="col-xs-4">
+        <span class="pull-right">
+          <span class="filter-item-triangle glyphicon" [ngClass]="{'glyphicon-triangle-top': data.open, 'glyphicon-triangle-bottom': !data.open}"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body results-body"> 
+    <div class="filter-item" 
+        [ngClass]="{'closed': !data.open}"
+        *ngFor="#item of data.items; #idx = index">
+      <filter-item-option [data]="item" ></filter-item-option>
+    </div>
+  </div>
+</div>

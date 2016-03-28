@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span class="panel-title">
+      <div class="row">
+        <div class="col-xs-6" style="margin-top: 2px;">
+          <span>
+            <span class="glyphicon glyphicon-filter"></span>
+            Filters
+          </span>
+        </div>
+        <div class="col-xs-6">
+          <span class="pull-right">
+            <div class="btn-group btn-group-xs" role="group">
+              <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-option-vertical"></span>
+              </button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div class="panel-body results-body"> 
+    <div *ngFor="#item of items; #idx = index">
+      <filter-item [data]="item"></filter-item>
+    </div>
+  </div>
+</div>
