@@ -1,0 +1,26 @@
+.filter-row {
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.filter-row .panel-heading {
+  padding: 5px;
+}
+
+.filter-row .glyphicon-menu-right,
+.filter-row .glyphicon-menu-down {
+  padding-right: 10px;
+}
+
+.filter-item {
+  padding: 5px;
+}
+
+.filter-item.closed {
+  display: none;
+}
+
+.filter-item-triangle {
+  font-size: 10px;
+  margin-right: 5px;
+}

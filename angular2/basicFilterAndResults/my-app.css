@@ -1,0 +1,9 @@
+.time-display {
+  display: inline-block; 
+  margin-left: 15px; 
+  text-align: center;
+}
+
+.x-small {
+  font-size: 75%;
+}
