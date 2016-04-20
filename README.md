@@ -1,3 +1,4 @@
 # development
 Public Development
-  Built by Christopher M. Kolodziejczyk
+
+Built by Christopher M. Kolodziejczyk
